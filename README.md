@@ -57,10 +57,11 @@ final_amount = round(bill_per_person, 2)
 print(f"Each person should pay ${final_amount}.")
 ```
 🚀 How to Run
-Make sure Python is installed
-Save the file as tip_calculator.py
-Run the program:
-python tip_calculator.py
+- Make sure Python is installed
+- Save the file as tip_calculator.py
+- Run the program:
+- python tip_calculator.py
+---
 ⚠️ Note
-Ensure valid numeric inputs
-Tip percentages should be one of: 10, 12, or 15
+- Ensure valid numeric inputs
+- Tip percentages should be one of: 10, 12, or 15
