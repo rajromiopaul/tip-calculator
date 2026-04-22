@@ -1,30 +1,48 @@
-💰 Tip Calculator
+# 💰 Tip Calculator
 
-A simple Python program that calculates how much each person should pay when splitting a bill, including tip.
+A simple Python program that helps split a bill among multiple people, including a tip.
 
-🚀 Features
-Takes total bill amount as input
-Allows user to choose tip percentage (10%, 12%, or 15%)
-Splits the bill among multiple people
-Rounds the final amount to 2 decimal places
-🧠 How It Works
-User enters the total bill amount
-User selects a tip percentage
-User enters number of people sharing the bill
-Program calculates:
-Tip amount
-Total bill including tip
-Amount per person
-🧾 Example
+---
+
+## 📌 Features
+
+- Takes total bill amount as input
+- Allows user to choose tip percentage (10%, 12%, 15%)
+- Splits the total bill evenly among a group
+- Rounds the final amount to 2 decimal places
+
+---
+
+## 🧠 How It Works
+
+1. User enters the total bill amount
+2. User selects a tip percentage
+3. User enters number of people
+4. Program calculates:
+   - Tip amount
+   - Total bill (including tip)
+   - Amount each person should pay
+
+---
+
+## 🧾 Example
+
+
 Welcome to the tip calculator!
 What was the total bill?
 $100
 How much tip would you like to give? 10, 12, or 15
 10
 How many people to split the bill?
-2
-Each person should pay $55.0.
-🛠️ Code
+4
+Each person should pay $27.5.
+
+
+---
+
+## 🛠️ Code
+
+```python
 print("Welcome to the tip calculator!")
 
 bill = float(input("What was the total bill?\n$"))
@@ -38,11 +56,11 @@ bill_per_person = total_bill / people
 final_amount = round(bill_per_person, 2)
 
 print(f"Each person should pay ${final_amount}.")
-⚠️ Notes
-Make sure to enter valid numbers
-Tip percentage should be one of: 10, 12, or 15
-The result is rounded to 2 decimal places for currency formatting
-📌 Future Improvements
-Input validation (handle invalid inputs)
-Support for custom tip percentages
-Currency formatting (e.g., always show 2 decimal places like $55.00)
+🚀 How to Run
+Make sure Python is installed
+Save the file as tip_calculator.py
+Run the program:
+python tip_calculator.py
+⚠️ Note
+Ensure valid numeric inputs
+Tip percentages should be one of: 10, 12, or 15
